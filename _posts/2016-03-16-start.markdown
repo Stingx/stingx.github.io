@@ -4,5 +4,224 @@ title:  "第一篇"
 date:   2016-3-16 17:46:29 +0800 
 categories: jekyll update
 ---
-测试测试.
-不知道成功与否
+<h2>{{page.title}} </h2>
+<p>测试测试.</p>
+<p>不知道成功与否</p>
+
+You can use the mark tag to <mark>highlight</mark> text.
+
+
+排版
+
+标题
+HTML 中的所有标题标签，<h1> 到 <h6> 均可使用。另外，还提供了 .h1 到 .h6 类，为的是给内联（inline）属性的文本赋予标题的样式。
+
+h1. Bootstrap heading
+Semibold 36px
+h2. Bootstrap heading
+Semibold 30px
+h3. Bootstrap heading
+Semibold 24px
+h4. Bootstrap heading
+Semibold 18px
+h5. Bootstrap heading
+Semibold 14px
+h6. Bootstrap heading
+Semibold 12px
+复制
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+在标题内还可以包含 <small> 标签或赋予 .small 类的元素，可以用来标记副标题。
+
+h1. Bootstrap heading Secondary text
+h2. Bootstrap heading Secondary text
+h3. Bootstrap heading Secondary text
+h4. Bootstrap heading Secondary text
+h5. Bootstrap heading Secondary text
+h6. Bootstrap heading Secondary text
+复制
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+页面主体
+Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 <body> 元素和所有段落元素。另外，<p> （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。
+
+Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+
+Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+复制
+<p>...</p>
+中心内容
+通过添加 .lead 类可以让段落突出显示。
+
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+复制
+<p class="lead">...</p>
+使用 Less 工具构建
+variables.less 文件中定义的两个 Less 变量决定了排版尺寸：@font-size-base 和 @line-height-base。第一个变量定义了全局 font-size 基准，第二个变量是 line-height 基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的 margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap 的默认样式。
+
+内联文本元素
+Marked text
+For highlighting a run of text due to its relevance in another context, use the <mark> tag.
+
+You can use the mark tag to highlight text.
+复制
+You can use the mark tag to <mark>highlight</mark> text.
+被删除的文本
+对于被删除的文本使用 <del> 标签。
+
+This line of text is meant to be treated as deleted text.
+复制
+<del>This line of text is meant to be treated as deleted text.</del>
+无用文本
+对于没用的文本使用 <s> 标签。
+
+This line of text is meant to be treated as no longer accurate.
+复制
+<s>This line of text is meant to be treated as no longer accurate.</s>
+插入文本
+额外插入的文本使用 <ins> 标签。
+
+This line of text is meant to be treated as an addition to the document.
+复制
+<ins>This line of text is meant to be treated as an addition to the document.</ins>
+带下划线的文本
+为文本添加下划线，使用 <u> 标签。
+
+This line of text will render as underlined
+复制
+<u>This line of text will render as underlined</u>
+利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。
+
+小号文本
+对于不需要强调的inline或block类型的文本，使用 <small> 标签包裹，其内的文本将被设置为父容器字体大小的 85%。标题元素中嵌套的 <small> 元素被设置不同的 font-size 。
+
+你还可以为行内元素赋予 .small 类以代替任何 <small> 元素。
+
+This line of text is meant to be treated as fine print.
+复制
+<small>This line of text is meant to be treated as fine print.</small>
+着重
+通过增加 font-weight 值强调一段文本。
+
+The following snippet of text is rendered as bold text.
+复制
+<strong>rendered as bold text</strong>
+斜体
+用斜体强调一段文本。
+
+The following snippet of text is rendered as italicized text.
+复制
+<em>rendered as italicized text</em>
+Alternate elements
+在 HTML5 中可以放心使用 <b> 和 <i> 标签。<b> 用于高亮单词或短语，不带有任何着重的意味；而 <i> 标签主要用于发言、技术词汇等。
+对齐
+通过文本对齐类，可以简单方便的将文字重新对齐。
+
+Left aligned text.
+
+Center aligned text.
+
+Right aligned text.
+
+Justified text.
+
+No wrap text.
+复制
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+改变大小写
+通过这几个类可以改变文本的大小写。
+
+lowercased text.
+
+UPPERCASED TEXT.
+
+Capitalized Text.
+复制
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">Capitalized text.</p>
+缩略语
+当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 <abbr> 元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。
+
+基本缩略语
+An abbreviation of the word attribute is attr.
+复制
+<abbr title="attribute">attr</abbr>
+首字母缩略语
+为缩略语添加 .initialism 类，可以让 font-size 变得稍微小些。
+
+HTML is the best thing since sliced bread.
+复制
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+地址
+让联系信息以最接近日常使用的格式呈现。在每行结尾添加 <br> 可以保留需要的样式。
+
+Twitter, Inc.
+795 Folsom Ave, Suite 600
+San Francisco, CA 94107
+P: (123) 456-7890
+Full Name
+first.last@example.com
+复制
+<address>
+  <strong>Twitter, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+引用
+在你的文档中引用其他来源的内容。
+
+默认样式的引用
+将任何 HTML 元素包裹在 <blockquote> 中即可表现为引用样式。对于直接引用，我们建议用 <p> 标签。
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+复制
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+多种引用样式
+对于标准样式的 <blockquote>，可以通过几个简单的变体就能改变风格和内容。
+
+命名来源
+
+添加 <footer> 用于标明引用来源。来源的名称可以包裹进 <cite>标签中。
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+
+Someone famous in Source Title
+复制
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+另一种展示风格
+
+通过赋予 .blockquote-reverse 类可以让引用呈现内容右对齐的效果。
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+
+Someone famous in Source Title
+复制
+<blockquote class="blockquote-reverse">
+  ...
+</blockquote>
