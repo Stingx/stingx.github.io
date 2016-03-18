@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Advent+Pro);
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
+/*@import url(http://fonts.googleapis.com/css?family=Advent+Pro);*/
+/*@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 /* Partials */
 /* Theme Vars */
 /* Compass Vars */
@@ -15,7 +15,7 @@ body {
   color: #bbb;
   text-shadow: 1px 1px 1px #000;
   height: 100%;
-  font-family: 'Oxygen', sans-serif;
+  font-family: '\5FAE\8F6F\96C5\9ED1', sans-serif;
   font-size: 14px;
 }
 
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #999;
   text-rendering: optimizelegibility;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: '\5FAE\8F6F\96C5\9ED1', sans-serif;
   /*font-family: 'Pontano Sans', sans-serif;*/
 }
 
