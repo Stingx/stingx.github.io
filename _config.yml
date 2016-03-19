@@ -75,6 +75,10 @@ JB :
   atom_path : /atom.xml
   rss_path : /rss.xml
   pkplugin_path: /pkplugin.html
+  images : /assets/images
+  fonts : /assets/fonts
+  stylesheets : /assets/stylesheets
+  javascripts : /assets/javascripts
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
