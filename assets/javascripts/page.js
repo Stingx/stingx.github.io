@@ -91,7 +91,6 @@ $(document).ready(function() {
         function genIndex(){
             var tmpl = genTmpl();
             var indexCon = '<div id="menuIndex" class="sidenav"></div>';
-
             $('#row').append(indexCon);
 
             $('#menuIndex')
@@ -122,6 +121,7 @@ $(document).ready(function() {
         if($('.entry h2').length > 1 && !isMobile.any() && !ie6){
 
             genIndex();
+            $('.entry').css({width:'70%'})
 
             $(window).load(function(){
                 var scrollTop = [];
